@@ -234,7 +234,8 @@ export default function Portfolio() {
         <h3 className="text-3xl font-bold mb-6">Let’s Work Together</h3>
         <p className="opacity-80 mb-8">Looking for a frontend developer? Let’s talk.</p>
 
-        <form name="contact" className="grid gap-4 max-w-md mx-auto" netlify>
+        <form name="contact" className="grid gap-4 max-w-md mx-auto" >
+        <input type="hidden" name="form-name" value="contact" />
           <input
             placeholder="Your name"
             required
