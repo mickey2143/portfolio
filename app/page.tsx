@@ -55,7 +55,7 @@ const projects = [
     desc: "An Eccommerce for Products",
     impact: "Learning",
     tech: ["Nextjs","Tailwindcss","Payment Integretion"],
-    link: "https://fit&foot.netlify.app/",
+    link: "https://fit-foot.netlify.app/",
   }
   
   
@@ -192,7 +192,7 @@ export default function Portfolio() {
               View Work
             </a>
             <a
-              href="/cv.pdf"
+              href="/Michael Ani - CV.pdf"
               className={`px-7 py-3 rounded-xl flex items-center gap-2 border transition ${dark ? "border-white/30 hover:bg-white/10" : "border-black/30 hover:bg-black/10"}`}
             >
               <Download size={18} /> Download CV
