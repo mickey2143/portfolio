@@ -233,34 +233,55 @@ export default function Portfolio() {
       <section id="contact" className="max-w-4xl mx-auto px-6 py-24 text-center">
         <h3 className="text-3xl font-bold mb-6">Let’s Work Together</h3>
         <p className="opacity-80 mb-8">Looking for a frontend developer? Let’s talk.</p>
+        <form
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
+  className="grid gap-4 max-w-md mx-auto"
+>
+  {/* Netlify required hidden fields */}
+  <input type="hidden" name="form-name" value="contact" />
+  <input type="hidden" name="bot-field" />
 
-        <form name="contact" className="grid gap-4 max-w-md mx-auto" >
-        <input type="hidden" name="form-name" value="contact" />
-          <input
-            placeholder="Your name"
-            required
-            type="text" name="name" 
-            className={`p-3 rounded-xl bg-transparent border ${dark ? "border-white/30 text-white" : "border-black/30 text-black"}`}
-          />
-          <input
-            required
-            placeholder="Your email"
-            type="email" name="email" 
-            className={`p-3 rounded-xl bg-transparent border ${dark ? "border-white/30  text-white" : "border-black/30 text-black"}`}
-          />
-          <textarea
-            required
-            placeholder="Tell me about your project or role"
-             name="message" 
-            className={`p-3 rounded-xl bg-transparent border ${dark ? "border-white/30  text-white" : "border-black/30 text-black"}`}
-          />
-          <button
-          type="submit"
-            className={`px-6 py-3 rounded-xl font-semibold transition ${dark ? "bg-white text-black hover:opacity-80" : "bg-black text-white hover:opacity-80"}`}
-          >
-            Send Message
-          </button>
-        </form>
+  <input
+    placeholder="Your name"
+    required
+    type="text"
+    name="name"
+    className={`p-3 rounded-xl bg-transparent border ${
+      dark ? "border-white/30 text-white" : "border-black/30 text-black"
+    }`}
+  />
+
+  <input
+    required
+    placeholder="Your email"
+    type="email"
+    name="email"
+    className={`p-3 rounded-xl bg-transparent border ${
+      dark ? "border-white/30 text-white" : "border-black/30 text-black"
+    }`}
+  />
+
+  <textarea
+    required
+    placeholder="Tell me about your project or role"
+    name="message"
+    className={`p-3 rounded-xl bg-transparent border ${
+      dark ? "border-white/30 text-white" : "border-black/30 text-black"
+    }`}
+  />
+
+  <button
+    type="submit"
+    className={`px-6 py-3 rounded-xl font-semibold transition ${
+      dark ? "bg-white text-black hover:opacity-80" : "bg-black text-white hover:opacity-80"
+    }`}
+  >
+    Send Message
+  </button>
+</form>
 
         <div className="flex justify-center gap-6 mt-10 opacity-80">
           <a href="https://github.com/mickey2143/" className="hover:opacity-60"><Github /></a>
